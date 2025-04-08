@@ -1,18 +1,18 @@
-import Element from './Element'
+import { useState } from "react";
+import ProgramList from "./ProgramList";
+import languages from "../data/languages";
 
 function Main() {
 
-    return (<>
-        <Element title="HTML" />
-        <Element title="CSS" />
-        <Element title="JavaScript" />
-        <Element title="Node.js" />
-        <Element title="Express" />
-        <Element title="ReactJS" />
-
-    </>
-
+    const [button, setButton] = useState(null);
+    return (
+        <>
+            <div>
+                {languages.map(element => <button onClick={() => { setButton(element.title) }} key={element.id}>{element.title}</button>)}
+                <ProgramList ProgramDescription={languages.filter(element => element.title === button)} />
+            </div>
+        </>
     )
-}
+};
 
-export default Main
+export default Main;
