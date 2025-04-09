@@ -4,8 +4,8 @@ function ProgramList(props) {
     return (
         <>
             {ProgramDescription.map(element =>
-                <div key={element.id}>
-                    <h4>{element.title}</h4>
+                <div key={element.id} className="container-program">
+                    <h4 className="">{element.title}</h4>
                     <p>{element.description}</p>
                 </div>
             )}

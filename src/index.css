@@ -1,0 +1,43 @@
+/********
+  RESET
+********/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**** container ****/
+
+.container {
+    margin: 40px 870px;
+}
+
+.container-program {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+}
+
+/*** buttom ***/
+
+.butt {
+    background-color: #0d6efd;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+.container-h1 {
+    margin: 40px 670px;
+}
+
+
+/*** h4 ***/
+
+h4 {
+    padding-bottom: 10px;
+}
